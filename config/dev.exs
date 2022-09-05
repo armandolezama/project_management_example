@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :proyect_management_system, ProyectManagementSystem.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "armsjs",
+  password: "armando123",
   hostname: "localhost",
   database: "proyect_management_system_dev",
   stacktrace: true,
