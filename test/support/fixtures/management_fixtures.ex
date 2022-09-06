@@ -18,4 +18,18 @@ defmodule ProyectManagementSystem.ManagementFixtures do
 
     project
   end
+
+  @doc """
+  Generate a document.
+  """
+  def document_fixture(attrs \\ %{}) do
+    {:ok, document} =
+      attrs
+      |> Enum.into(%{
+
+      })
+      |> ProyectManagementSystem.Management.create_document()
+
+    document
+  end
 end
