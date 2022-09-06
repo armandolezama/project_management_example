@@ -1,7 +1,6 @@
 defmodule ProjectManagementSystem.Management.Document do
   use Ecto.Schema
   import Ecto.Changeset
-  alias ProjectManagementSystem.Management.Document
 
   schema "documents" do
     field :name, :string

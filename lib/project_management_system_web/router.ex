@@ -14,6 +14,11 @@ defmodule ProjectManagementSystemWeb.Router do
     plug :accepts, ["json"]
   end
 
+  pipeline :json_api do
+    plug :accepts, ["json-api"]
+    plug JaSerializer.Deserializer
+  end
+
   scope "/", ProjectManagementSystemWeb do
     pipe_through :browser
 
@@ -22,7 +27,7 @@ defmodule ProjectManagementSystemWeb.Router do
 
   # Other scopes may use custom stacks.
   scope "/api", ProjectManagementSystemWeb do
-    pipe_through :api
+    pipe_through :json_api
 
     resources "/projects", ProjectController, only: [:index, :show]
     resources "/documents", DocumentController, only: [:index, :show]
