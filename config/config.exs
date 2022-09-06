@@ -7,14 +7,14 @@
 # General application configuration
 import Config
 
-config :proyect_management_system,
-  ecto_repos: [ProyectManagementSystem.Repo]
+config :project_management_system,
+  ecto_repos: [ProjectManagementSystem.Repo]
 
 # Configures the endpoint
-config :proyect_management_system, ProyectManagementSystemWeb.Endpoint,
+config :project_management_system, ProjectManagementSystemWeb.Endpoint,
   url: [host: "localhost"],
-  render_errors: [view: ProyectManagementSystemWeb.ErrorView, accepts: ~w(html json), layout: false],
-  pubsub_server: ProyectManagementSystem.PubSub,
+  render_errors: [view: ProjectManagementSystemWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: ProjectManagementSystem.PubSub,
   live_view: [signing_salt: "Gsh+mCvy"]
 
 # Configures the mailer
@@ -24,7 +24,7 @@ config :proyect_management_system, ProyectManagementSystemWeb.Endpoint,
 #
 # For production it's recommended to configure a different adapter
 # at the `config/runtime.exs`.
-config :proyect_management_system, ProyectManagementSystem.Mailer, adapter: Swoosh.Adapters.Local
+config :project_management_system, ProjectManagementSystem.Mailer, adapter: Swoosh.Adapters.Local
 
 # Swoosh API client is needed for adapters other than SMTP.
 config :swoosh, :api_client, false

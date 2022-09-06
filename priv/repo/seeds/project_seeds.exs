@@ -1,5 +1,5 @@
-alias ProyectManagementSystem.Repo
-alias ProyectManagementSystem.Management.Project
+alias ProjectManagementSystem.Repo
+alias ProjectManagementSystem.Management.Project
 
 Repo.insert! %Project{
   title: "My first title",

@@ -1,11 +1,11 @@
 import Config
 
 # Configure your database
-config :proyect_management_system, ProyectManagementSystem.Repo,
+config :project_management_system, ProjectManagementSystem.Repo,
   username: "armsjs",
   password: "armando123",
   hostname: "localhost",
-  database: "proyect_management_system_dev",
+  database: "project_management_system_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -16,7 +16,7 @@ config :proyect_management_system, ProyectManagementSystem.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with esbuild to bundle .js and .css sources.
-config :proyect_management_system, ProyectManagementSystemWeb.Endpoint,
+config :project_management_system, ProjectManagementSystemWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
   http: [ip: {127, 0, 0, 1}, port: 4000],
@@ -54,13 +54,13 @@ config :proyect_management_system, ProyectManagementSystemWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :proyect_management_system, ProyectManagementSystemWeb.Endpoint,
+config :project_management_system, ProjectManagementSystemWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/proyect_management_system_web/(live|views)/.*(ex)$",
-      ~r"lib/proyect_management_system_web/templates/.*(eex)$"
+      ~r"lib/project_management_system_web/(live|views)/.*(ex)$",
+      ~r"lib/project_management_system_web/templates/.*(eex)$"
     ]
   ]
 

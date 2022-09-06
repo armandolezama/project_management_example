@@ -1,7 +1,7 @@
-defmodule ProyectManagementSystem.ManagementFixtures do
+defmodule ProjectManagementSystem.ManagementFixtures do
   @moduledoc """
   This module defines test helpers for creating
-  entities via the `ProyectManagementSystem.Management` context.
+  entities via the `ProjectManagementSystem.Management` context.
   """
 
   @doc """
@@ -14,7 +14,7 @@ defmodule ProyectManagementSystem.ManagementFixtures do
         description: "some description",
         title: "some title"
       })
-      |> ProyectManagementSystem.Management.create_project()
+      |> ProjectManagementSystem.Management.create_project()
 
     project
   end
@@ -28,7 +28,7 @@ defmodule ProyectManagementSystem.ManagementFixtures do
       |> Enum.into(%{
 
       })
-      |> ProyectManagementSystem.Management.create_document()
+      |> ProjectManagementSystem.Management.create_document()
 
     document
   end

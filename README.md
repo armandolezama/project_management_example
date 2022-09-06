@@ -1,4 +1,4 @@
-# ProyectManagementSystem
+# ProjectManagementSystem
 
 To start your Phoenix server:
 

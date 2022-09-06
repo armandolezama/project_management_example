@@ -1,9 +1,9 @@
-defmodule ProyectManagementSystem.MixProject do
+defmodule ProjectManagementSystem.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :proyect_management_system,
+      app: :project_management_system,
       version: "0.1.0",
       elixir: "~> 1.12",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule ProyectManagementSystem.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {ProyectManagementSystem.Application, []},
+      mod: {ProjectManagementSystem.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

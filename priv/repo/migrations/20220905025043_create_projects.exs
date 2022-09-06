@@ -1,4 +1,4 @@
-defmodule ProyectManagementSystem.Repo.Migrations.CreateProjects do
+defmodule ProjectManagementSystem.Repo.Migrations.CreateProjects do
   use Ecto.Migration
 
   def change do
